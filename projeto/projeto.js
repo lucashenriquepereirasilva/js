@@ -1,69 +1,69 @@
 /**
  * POO
  * Abstração, Herança e Polimosfismo
- * @author Lucas henrique
+ * @author Nathan Furukawa
  */
 
 // Classe modelo (iniciar sempre com letra maiuscula)
 class Carro {
-  //Atributos
-  constructor(ano, cor) {
-      this.ano = ano
-      this.cor = cor
-  }
+    //Atributos
+    constructor(ano, cor) {
+        this.ano = ano
+        this.cor = cor
+    }
 
-//ações
-  criarCarro() {
-      console.log("-------------------------------------------------------")
-      console.log("🚗🚘")
-      console.log(`Ano do carro: ${this.ano}`)
-      console.log(`Cor: ${this.cor}`)
+ //ações
+    criarCarro() {
+        console.log("-------------------------------------------------------")
+        console.log("🚗🚘")
+        console.log(`Ano do carro: ${this.ano}`)
+        console.log(`Cor: ${this.cor}`)
 }
 
-  ligar() {
-      console.log(`Carro da cor ${this.cor} foi ligado!`)
+    ligar() {
+        console.log(`Carro da cor ${this.cor} foi ligado!`)
 }
 
-  desligar() {
-      console.log("Chave fora de contato!")
+    desligar() {
+        console.log("Chave fora de contato!")
 }
 
-  acelerar() {
-      console.log("🚘💨  🚗💨")
+    acelerar() {
+        console.log("🚘💨  🚗💨")
 }
 }
 
 // Classe modelo Enxada com herança e Bloco
 class Aviao extends Carro{
-  // Atributos
-  constructor(ano, cor, envergadura){
-      super(ano, cor) //super -> classe pai
-      this.envergadura = envergadura
-  }
+    // Atributos
+    constructor(ano, cor, envergadura){
+        super(ano, cor) //super -> classe pai
+        this.envergadura = envergadura
+    }
 
-  //ações
-  criarAviao() {
-      console.log("--------------------------")
-      console.log("✈️")
-      console.log(`Ano do avião: ${this.ano}`)
-      console.log(`Cor: ${this.cor}`)
-  }
+    //ações
+    criarAviao() {
+        console.log("--------------------------")
+        console.log("✈️")
+        console.log(`Ano do avião: ${this.ano}`)
+        console.log(`Cor: ${this.cor}`)
+    }
 
-  envergadura() {
-      console.log(`Envergadura do avião é: ${this.envergadura}`)
-  }
+    envergadura() {
+        console.log(`Envergadura do avião é: ${this.envergadura}`)
+    }
 
-  aterrizar() {
-      console.log("avião aterrizando!")
-      if (this.conquista === true) {
-          console.log("☀ O avião pousou!")
-      }
-  }
+    aterrizar() {
+        console.log("avião aterrizando!")
+        if (this.conquista === true) {
+            console.log("☀ O avião pousou!")
+        }
+    }
 
-  // Polimorfismo (Sobreescrever o método existente da classe pai)
-  acelerar() {
-      console.log("acelerou!")
-  }
+    // Polimorfismo (Sobreescrever o método existente da classe pai)
+    acelerar() {
+        console.log("acelerou!")
+    }
 }
 
 console.clear()
