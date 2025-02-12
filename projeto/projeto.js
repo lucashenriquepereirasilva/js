@@ -1,7 +1,7 @@
 /**
  * POO
  * Abstração, Herança e Polimosfismo
- * @author Nathan Furukawa
+ * @author lucas henrique
  */
 
 // Classe modelo (iniciar sempre com letra maiuscula)

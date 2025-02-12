@@ -1,0 +1,12 @@
+//fazer a instancia da classe Patrimonio
+Patrimonio pat = new Patrimonio();
+pat.setSerie(request.getParameter("txtSerie"));
+pat.setNomepatrimonio(request.getParameter("txtNome"));
+pat.setTipo(request.getParameter("cboTipo"));
+pat.setDescricao(request.getParameter("txtDescricao"));
+pat.setLocalizacao(request.getParameter("txtSerie"));
+pat.setDatafabricacao(request.getParameter("datafabricacao"));
+pat.setDataaquisicao(request.getParameter("Dataaquisicao"));
+
+out.println("<h2>"+pat.getNomepatrimonio()+"</h2>");
+out.println("<h2>"+pat.getDescricao()+"</h2>");
