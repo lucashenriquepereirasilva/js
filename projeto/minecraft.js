@@ -60,6 +60,29 @@ class Enxada extends Bloco{
     }
 }
 
+class EspadaMagica extends Bloco{
+    constructor(textura, resistencia){
+        super(textura, resistencia)  //super -> classe pai
+    } 
+
+    criarEspadaMagica() {
+        console.log("--------------------------")
+        console.log("    ⚔️") // ícone de espada
+        console.log("-_")
+        console.log(" /")
+        console.log(`Espada de ${this.textura}`)
+        console.log(`Resistência: ${this.resistencia}`)
+    }
+
+    quebrado() {
+        console.log("Espada Quebrou")
+    }
+
+    guerra() {
+        console.log("tim tim tim")
+    }
+}
+
 /* ------ Mundo -----*/
 console.clear()
 console.log(" _____ _____ _____ _____ _____ _____ _____ _____ _____ ")
@@ -90,3 +113,14 @@ enxada2.arar()
 const enxada3 = new Enxada("Diamante", 10, false)
 enxada3.criarEnxada()
 enxada3.minerar()
+
+
+const espadaMagica1= new Espada("Ferro", 10)
+espada1.criarEspada()
+espada1.guerra()
+espada1.quebrou()
+
+const espadaMagica2 = new Espada("Diamante", 50)
+espada2.criarEspada()
+espada2.guerra()
+espada2.quebrou()
