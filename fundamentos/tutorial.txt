@@ -1,0 +1,42 @@
+A linguagem JS é case sensitive ( faz diferença entre letras Maiúsculas e minúsculas)
+
+- No JS o ; é opcional
+- Voce pode usar "" ou '' não é permitido misturar " ' " '
+Dica: usar "Textos" e "importações"
+
+variaveis na linguagem JS  são dinamicamente Tipadas
+
+- String
+- Number
+- Boolean
+
+- function
+-  object
+
+Para criar uma Constante usamos: const
+Para Criar uma variavel podemos usar var ou let
+var (obsoleto  e inseguro (redeclarar a variavel))
+usar sempre o let
+
+
+Concatenação  (União de textos com variaveis)
++ (Operador de soma) !EVITAR (Tipagem  Dinamica)
+
+usar crase ( forma)
+
+Node  - Plataforma que permite executar o js
+
+Comandos NODE
+node -v (Versão do node)
+node arquivo,js ( executar o arquivo javascript)
+
+
+
+___________________________________________________
+
+Podemos executar codigo JS no HTML  de 2 formas:
+
+1 Diretamente usando  a tag <script></script>
+2 Criando  um documento  js e linkando com o html  usando a tag 
+
+<script src="script.js"></script
