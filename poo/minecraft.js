@@ -67,19 +67,19 @@ class EspadaMagica extends Bloco{
 
     criarEspadaMagica() {
         console.log("--------------------------")
-        console.log("    ⚔️") // ícone de espada
+        console.log("    ⚔️")
         console.log("-_")
         console.log(" /")
         console.log(`Espada de ${this.textura}`)
         console.log(`Resistência: ${this.resistencia}`)
     }
 
-    quebrado() {
-        console.log("Espada Quebrou")
+    feitico() {
+        console.log("lancar feitico")
     }
 
-    guerra() {
-        console.log("tim tim tim")
+    dano() {
+        console.log("po  po")
     }
 }
 
@@ -115,12 +115,12 @@ enxada3.criarEnxada()
 enxada3.minerar()
 
 
-const espadaMagica1= new Espada("Ferro", 10)
+const espadaMagica1= new Espada("esmeralda", 10)
 espada1.criarEspada()
 espada1.guerra()
 espada1.quebrou()
 
-const espadaMagica2 = new Espada("Diamante", 50)
+const espadaMagica2 = new Espada("pedra", 50)
 espada2.criarEspada()
 espada2.guerra()
 espada2.quebrou()
